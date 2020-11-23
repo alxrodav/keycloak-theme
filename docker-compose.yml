@@ -29,5 +29,7 @@ services:
       KEYCLOAK_PASSWORD: password
     ports:
       - 8080:8080
+    volumes:
+      - ./themes/demo:/opt/jboss/keycloak/themes/demo
     depends_on:
       - postgres
